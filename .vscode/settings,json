@@ -3,12 +3,12 @@
         {
             "format": "expanded",
             "extensionName": ".css",
-            "savePath": "/css"
+            "savePath": "~/../css/"
         },
         {
             "format": "compressed",
             "extensionName": ".min.css",
-            "savePath": "/css"
+            "savePath": "~/../css/"
         }
     ],
     "liveSassCompile.settings.excludeList": [
@@ -17,5 +17,8 @@
     ],
     "liveSassCompile.settings.generateMap": true,
     "liveServer.settings.port": 1235,
-    "liveSassCompile.settings.autoprefix": null
+    "liveSassCompile.settings.autoprefix": [
+        "> 1%",
+        "last 2 versions"
+    ]
 }
