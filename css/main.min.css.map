@@ -3,6 +3,7 @@
     "mappings": "",
     "sources": [
         "../sass/main.scss",
+        "../sass/utils/_variables.scss",
         "../sass/base/_reset.scss",
         "../sass/components/_page-header.scss",
         "../sass/layout/_hero.scss",
