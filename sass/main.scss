@@ -1,8 +1,15 @@
 @import './utils/variables';
 @import './base/reset';
+@import './utils/hidden';
+@import './base/common';
+@import './base/reset';
+@import './components/container';
 @import './components/page-header';
 @import './layout/hero';
+@import './components/btn';
+@import './components/label';
 @import './components/modal';
+@import './components/checkbox';
 @import './layout/features';
 @import './layout/work';
 @import './layout/team';

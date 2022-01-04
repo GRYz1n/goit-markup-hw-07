@@ -1,0 +1,28 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section.work {
+  padding-top: 0px;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: var(--accent-text-color);
+
+  font-weight: 400;
+  font-size: 40;
+  line-height: 1.5;
+}
+
+.section-title .centered {
+  text-align: center;
+}
+
+.section .no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
