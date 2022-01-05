@@ -1,26 +1,18 @@
 .form-checkbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include align-center();
 
   margin-bottom: 20px;
   margin-top: 20px;
   margin-left: 10px;
 
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-
-  letter-spacing: 0.03em;
+  @include font(14px, 1.71, 0.03em, 400);
 
   color: var(--gray-text-color);
 
   cursor: pointer;
 
   span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include align-center();
 
     width: 16px;
     height: 16px;
@@ -43,15 +35,3 @@
   color: var(--accent-text-color);
   text-decoration: underline;
 }
-
-// .modal-check {
-//   &:focus + .form-checkbox span,
-//   &:hover + .form-checkbox span {
-//     border-color: var(--accent-text-color);
-//   }
-
-//   &:checked + .form-checkbox span {
-//     background-color: var(--accent-text-color);
-//     border: none;
-//   }
-// }

@@ -11,9 +11,7 @@
   color: var(--accent-text-color);
 
   font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  @include font(26px, 1.19, 0.03em, 700);
 }
 
 .studio {
@@ -57,9 +55,7 @@
 
     color: var(--primary-text-color);
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
+    @include font(14px, 1.2, 0.02em, 500);
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -103,10 +99,7 @@
     padding-bottom: 32px;
 
     color: var(--gray-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @include font(14px, 1.14, 0.02em, 500);
     text-decoration: none;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);

@@ -2,12 +2,8 @@
   display: flex;
   margin-bottom: 12px;
 
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include font(20px, 1.15, 0.03em, 700);
   text-align: center;
-  letter-spacing: 0.03em;
-
   color: var(--background-dark);
 }
 
@@ -21,11 +17,7 @@
 }
 
 .form-label {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
-
+  @include font(14px, 1.14, 0.01em, 400);
   color: var(--gray-text-color);
 }
 
@@ -37,11 +29,7 @@
   border-radius: 4px;
   outline: none;
 
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
-
+  @include font(14px, 1.14, 0.01em, 400);
   color: var(--primary-text-color);
 
   &:focus,
@@ -77,9 +65,9 @@
 }
 
 .form-field {
-  position: relative;
   display: flex;
   flex-direction: column;
+  position: relative;
 
   text-align: left;
 
@@ -92,12 +80,7 @@
     border: 1px solid var(--modal-grey-color);
 
     &::placeholder {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 1.25;
-
-      letter-spacing: 0.03em;
-
+      @include font(16px, 1.25, 0.03em, 400);
       color: var(--modal-grey-color);
     }
   }

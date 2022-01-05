@@ -23,11 +23,9 @@
 .address1 {
   color: var(--team-main);
 
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  @include font(14px, 1.71, 0.03em, 400);
   vertical-align: Top;
+  font-style: normal;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -70,11 +68,8 @@
 
   color: var(--team-main);
 
+  @include font(14px, 1.14, 0.03em, 700);
   font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -102,10 +97,8 @@
 .footer-socialnetworks {
   width: 44px;
   height: 44px;
-  display: flex;
+  @include align-center();
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
   border-radius: 50px;
   fill: var(--white-text-color);
 
@@ -121,11 +114,7 @@
 
   color: var(--white-text-color);
 
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.14, 0.03em, 700);
   text-transform: uppercase;
 }
 
@@ -139,10 +128,7 @@
   display: flex;
   align-items: center;
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
+  @include font(16px, 1.87, 0.06em, 700);
   color: var(--background-white);
 
   width: 200px;
@@ -178,9 +164,7 @@
 }
 
 .auth-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include align-center();
 }
 
 .input {
