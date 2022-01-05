@@ -4,18 +4,17 @@
   text-align: center;
 }
 
-.container.h {
-  width: 696px;
+.container {
+  &.h {
+    width: 696px;
+  }
 }
 
 .hero-title {
   margin-bottom: 30px;
   color: var(--white-text-color);
 
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
+  @include font(44px, 1.36, 0.06em, 900);
   text-transform: uppercase;
 }
 

@@ -4,9 +4,7 @@
 }
 
 .clients-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include align-center();
 
   width: 170px;
   height: 92px;

@@ -339,16 +339,19 @@ textarea {
 }
 
 .portfolio-item {
-  color: var(--primary-text-color);
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  color: var(--primary-text-color);
 }
 
 .portfolio-text {
-  color: var(--gray-text-color);
   font-size: 16px;
   line-height: 1.87;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  color: var(--gray-text-color);
 }
 
 .portfolio-list {
@@ -394,10 +397,10 @@ textarea {
 .overlay-text {
   padding: 63px 24px;
   font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
+  font-weight: 400;
   color: var(--white-text-color);
 }
 
@@ -427,16 +430,19 @@ textarea {
 
 .team-member {
   margin-bottom: 10px;
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
+  font-weight: 500;
 }
 
 .team-text {
   margin-bottom: 16px;
-  color: var(--gray-text-color);
   font-size: 16px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  color: var(--gray-text-color);
 }
 
 .team-team {
@@ -455,9 +461,9 @@ textarea {
   width: 44px;
   height: 44px;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
   border-radius: 50px;
   fill: var(--sprite-fill-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);

@@ -24,18 +24,16 @@
 
 .team-member {
   margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+
+  @include font(16px, 1.19, 0.03em, 500);
 }
 
 .team-text {
   margin-bottom: 16px;
 
-  color: var(--gray-text-color);
+  @include font(16px, 1.19, 0.03em, 400);
 
-  font-size: 16px;
-  line-height: 1.19;
+  color: var(--gray-text-color);
 }
 
 .team-team {
@@ -53,10 +51,8 @@
 .link-socialnetworks {
   width: 44px;
   height: 44px;
-  display: flex;
+  @include align-center();
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
   border-radius: 50px;
   fill: var(--sprite-fill-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),

@@ -1,11 +1,10 @@
 .title {
   margin-bottom: 10px;
 
-  color: var(--primary-text-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.71;
+  @include font(14px, 1.71, 0.03em, 700);
   text-transform: uppercase;
+
+  color: var(--primary-text-color);
 }
 
 .features {

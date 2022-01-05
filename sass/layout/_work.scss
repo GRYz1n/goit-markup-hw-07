@@ -4,9 +4,7 @@
 
 .work-title,
 .team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(36px, 1.17, 0.03em, 700);
   text-align: center;
   margin-bottom: 50px;
 }
@@ -44,12 +42,9 @@
 }
 
 .work-overlay-text {
-  color: var(--backdrop-frame-color);
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(14px, 1.14, 0.03em, 700);
   text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  color: var(--backdrop-frame-color);
 }
