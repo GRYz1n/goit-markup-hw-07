@@ -16,70 +16,42 @@
   color: var(--gray-text-color);
 
   cursor: pointer;
-}
 
-.form-checkbox span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  width: 16px;
-  height: 16px;
-  border: 2px solid black;
-  margin-right: 8px;
-  border-radius: 2px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid black;
+    margin-right: 8px;
+    border-radius: 2px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
 }
 
 .icon-check {
   fill: var(--background-white);
 }
 
-/* --------- через before ----------- */
-
-/* .form-checkbox::before {
-  content: '';
-  width: 16px;
-  height: 16px;
-  border: 2px solid black;
-  margin-right: 5px;
-  display: block;
-  border-radius: 2px;
-}
-
-.modal-check:checked + .form-checkbox::before {
-  background-color: var(--accent-text-color);
-  background-image: url(../images/svg/modal/icon-check.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: none;
-} */
-
-/* --------------checkbox---------------- */
-
-.form-checkbox:hover,
-.form-checkbox:focus {
-  color: var(--accent-text-color);
-}
-
-.button.form-button:hover,
-.button.form-button:focus {
-  background: gainsboro;
-  color: var(--accent-text-color);
-  box-shadow: var(--card-shadow);
-}
-
-.modal-check:focus + .form-checkbox span,
-.modal-check:hover + .form-checkbox span {
-  border-color: var(--accent-text-color);
-}
-
-.modal-check:checked + .form-checkbox span {
-  background-color: var(--accent-text-color);
-  border: none;
-}
-
 .agreement-link {
   color: var(--accent-text-color);
   text-decoration: underline;
 }
+
+// .modal-check {
+//   &:focus + .form-checkbox span,
+//   &:hover + .form-checkbox span {
+//     border-color: var(--accent-text-color);
+//   }
+
+//   &:checked + .form-checkbox span {
+//     background-color: var(--accent-text-color);
+//     border: none;
+//   }
+// }

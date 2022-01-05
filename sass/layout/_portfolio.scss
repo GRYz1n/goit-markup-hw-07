@@ -34,28 +34,22 @@
   margin-left: calc(-1 * var(--card-set-gap));
 }
 
-.portfolio-list > .portfolio-element {
+.portfolio-element {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
-}
+  // transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.portfolio-element {
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &:hover,
+  &:focus-within {
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2), 0px 1px 3px rgba(0, 0, 0, 0.14),
+      0px 1px 5px rgba(0, 0, 0, 0.12);
+  }
 
-.portfolio-element:hover {
-  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2), 0px 1px 3px rgba(0, 0, 0, 0.14),
-    0px 1px 5px rgba(0, 0, 0, 0.12);
-}
-.portfolio-element:focus-within {
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2), 0px 5px 10px rgba(0, 0, 0, 0.14),
-    0px 5px 10px rgba(0, 0, 0, 0.12);
-}
-
-.portfolio-image {
-  position: relative;
-  overflow: hidden;
+  &:hover .portfolio-overlay,
+  &:focus-within .portfolio-overlay {
+    transform: translateY(0);
+  }
 }
 
 .portfolio-overlay {
@@ -71,9 +65,9 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-element:hover .portfolio-overlay,
-.portfolio-element:focus-within .portfolio-overlay {
-  transform: translateY(0);
+.portfolio-image {
+  position: relative;
+  overflow: hidden;
 }
 
 .overlay-text {

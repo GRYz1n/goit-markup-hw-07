@@ -6,9 +6,6 @@
   display: flex;
   flex-wrap: wrap;
 }
-.team-list .team-element:last-child {
-  margin-right: 0px;
-}
 
 .team-element {
   background-color: var(--background-white);
@@ -20,6 +17,9 @@
   border-radius: 4px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2), 0px 1px 5px rgba(0, 0, 0, 0.14),
     0px 1px 8px rgba(0, 0, 0, 0.12);
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
 .team-member {
@@ -61,17 +61,17 @@
   fill: var(--sprite-fill-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-text-color);
+    fill: var(--background-white);
+  }
 }
 
 .icon-socialnetworks {
   width: 20px;
   height: 20px;
-}
-
-.link-socialnetworks:hover,
-.link-socialnetworks:focus {
-  background-color: var(--accent-text-color);
-  fill: var(--background-white);
 }
 
 .sn-element {
