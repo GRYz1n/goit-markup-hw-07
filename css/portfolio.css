@@ -91,6 +91,10 @@ textarea {
   padding-bottom: 0;
 }
 
+.container {
+  padding-top: 0px;
+}
+
 .section.work {
   padding-top: 0px;
 }
@@ -182,30 +186,29 @@ textarea {
 }
 
 /* -------------------SITE NAV---------------------- */
-.menu,
-.icon-mail,
-.main-nav,
-.top-site-nav,
-.top-contact-list {
+.header,
+.header__menu,
+.header__nav,
+.header__contacts {
   display: flex;
   align-items: center;
 }
 
-.top-site-nav {
+.header__nav {
   margin-left: 93px;
 }
 
-.top-site-nav .current.link {
+.header__nav .header__page--link-current.header__page--link {
   color: var(--accent-text-color);
 }
 
-.top-site-nav .item + .item {
+.header__nav .header__page + .header__page {
   margin-left: 40px;
   position: relative;
   display: list-item;
 }
 
-.top-site-nav .link {
+.header__nav .header__page--link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -217,15 +220,15 @@ textarea {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.top-site-nav .link:hover, .top-site-nav .link:focus {
+.header__nav .header__page--link:hover, .header__nav .header__page--link:focus {
   color: var(--accent-text-color);
 }
 
-.item {
+.header__page {
   position: relative;
 }
 
-.current::after {
+.header__page--link-current::after {
   position: absolute;
   content: '';
   left: 0;
@@ -237,11 +240,11 @@ textarea {
 }
 
 /* contacts */
-.top-contact-list {
+.header__contacts {
   margin-left: auto;
 }
 
-.top-contact-list .link {
+.header__contacts .link {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -255,17 +258,14 @@ textarea {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.top-contact-list .link:hover, .top-contact-list .link:focus {
+.header__contacts .link:hover, .header__contacts .link:focus {
   color: var(--accent-text-color);
 }
 
-.email-and-phone {
+.header__contacts--email,
+.header__contacts--phone {
   color: var(--background-hero);
   margin-left: 30px;
-}
-
-.email-and-phone:first-child {
-  margin-left: 0px;
 }
 
 .icon-mail {
@@ -408,12 +408,12 @@ textarea {
   background: var(--team-main);
 }
 
-.team-list {
+.team__list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.team-element {
+.team__element {
   background-color: var(--background-white);
   margin-right: 30px;
   box-sizing: border-box;
@@ -424,11 +424,19 @@ textarea {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2), 0px 1px 5px rgba(0, 0, 0, 0.14), 0px 1px 8px rgba(0, 0, 0, 0.12);
 }
 
-.team-element:last-child {
+.team__element:last-child {
   margin-right: 0px;
 }
 
-.team-member {
+.team__team {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+  text-align: center;
+}
+
+.team__member {
   margin-bottom: 10px;
   font-size: 16px;
   line-height: 1.19;
@@ -436,7 +444,7 @@ textarea {
   font-weight: 500;
 }
 
-.team-text {
+.team__text {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
@@ -445,19 +453,78 @@ textarea {
   color: var(--gray-text-color);
 }
 
-.team-team {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
-  text-align: center;
+.footer {
+  background-color: var(--background-dark);
+  padding-bottom: 60px;
+  padding-top: 60px;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
-.team-social-list {
+.footer--container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__contacts .logo {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+
+.footer__address--street {
+  color: var(--team-main);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  vertical-align: Top;
+  font-style: normal;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__address--street:focus, .footer__address--street:hover {
+  color: var(--accent-text-color);
+}
+
+.footer__address--mail,
+.footer__address--phone {
+  color: var(--footer-text-color);
+  font-style: normal;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__address--mail:focus, .footer__address--mail:hover,
+.footer__address--phone:focus,
+.footer__address--phone:hover {
+  color: var(--accent-text-color);
+}
+
+.footer__address {
+  margin-bottom: 9px;
+}
+
+.footer__address:last-child {
+  margin-bottom: 0px;
+}
+
+.footer__subscribe {
+  display: block;
+  margin-left: 67px;
+  justify-content: center;
+}
+
+/* -------------------TEAM---------------------- */
+.social {
   display: flex;
 }
 
-.link-socialnetworks {
+.social__element {
+  display: flex;
+  width: calc((100% - 10px) / 4);
+}
+
+.social__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -469,82 +536,26 @@ textarea {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-socialnetworks:hover, .link-socialnetworks:focus {
+.social__link:hover, .social__link:focus {
   background-color: var(--accent-text-color);
   fill: var(--background-white);
 }
 
-.icon-socialnetworks {
+.social__icon {
   width: 20px;
   height: 20px;
 }
 
-.sn-element {
-  display: flex;
-  width: calc((100% - 10px) / 4);
-}
-
-.footer {
-  background-color: var(--background-dark);
-  padding-bottom: 60px;
-  padding-top: 60px;
-  font-size: 14px;
-  line-height: 1.71;
-}
-
-.footer-container {
-  display: flex;
-  align-items: baseline;
-}
-
-.footer-adress .logo {
-  display: flex;
-  margin-bottom: 20px;
-  padding: 0px;
-}
-
-.address1 {
-  color: var(--team-main);
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  font-weight: 400;
-  vertical-align: Top;
-  font-style: normal;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address1:focus, .address1:hover {
-  color: var(--accent-text-color);
-}
-
-.address2 {
-  color: var(--footer-text-color);
-  font-style: normal;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address2:focus, .address2:hover {
-  color: var(--accent-text-color);
-}
-
-.contact-list {
-  display: block;
-}
-
-.address-item {
-  margin-bottom: 9px;
-}
-
-.address-item:last-child {
-  margin-bottom: 0px;
-}
-
-.footer-social {
+/* -------------------FOOTER---------------------- */
+.social--footer {
   margin-left: 70px;
 }
 
-.social-text {
+.social__list {
+  display: flex;
+}
+
+.social__text {
   margin-bottom: 20px;
   color: var(--team-main);
   font-size: 14px;
@@ -555,11 +566,7 @@ textarea {
   text-transform: uppercase;
 }
 
-.social-list {
-  display: flex;
-}
-
-.socialnetworks {
+.social__frame {
   height: 44px;
   width: 44px;
   margin-right: 10px;
@@ -570,11 +577,11 @@ textarea {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socialnetworks:focus, .socialnetworks:hover {
+.social__frame:focus, .social__frame:hover {
   background-color: var(--accent-text-color);
 }
 
-.footer-socialnetworks {
+.social__link--footer {
   width: 44px;
   height: 44px;
   display: flex;
@@ -585,7 +592,7 @@ textarea {
   fill: var(--white-text-color);
 }
 
-.footer-socialnetworks:focus {
+.social__link--footer:focus {
   background-color: var(--hero-hover-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -601,13 +608,26 @@ textarea {
   text-transform: uppercase;
 }
 
-.container-subscribe {
-  display: block;
-  margin-left: 67px;
+.subscribe__auth {
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-.button-subscribe {
+.subscribe__input {
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--footer-color);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe__button {
   display: flex;
   align-items: center;
   font-size: 16px;
@@ -626,39 +646,20 @@ textarea {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-subscribe:hover, .button-subscribe:focus {
+.subscribe__button:hover, .subscribe__button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--hero-hover-color);
   background-color: var(--white-text-color);
 }
 
-.icon-send {
+.subscribe__icon {
   margin-left: 10px;
   width: 24px;
   height: 24px;
   fill: currentColor;
 }
 
-.icon-send:hover, .icon-send:focus {
+.subscribe__icon:hover, .subscribe__icon:focus {
   fill: var(--portfolio-overlay-color);
-}
-
-.auth-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.input {
-  padding-left: 16px;
-  width: 358px;
-  height: 50px;
-  margin-right: 12px;
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: var(--footer-color);
-  color: rgba(255, 255, 255, 0.6);
 }
 /*# sourceMappingURL=portfolio.css.map */

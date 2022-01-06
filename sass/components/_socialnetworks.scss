@@ -1,0 +1,83 @@
+/* -------------------TEAM---------------------- */
+
+.social {
+  display: flex;
+}
+
+.social__element {
+  display: flex;
+  width: calc((100% - 10px) / 4);
+}
+
+.social__link {
+  width: 44px;
+  height: 44px;
+  @include align-center();
+  flex-direction: row;
+  border-radius: 50px;
+  fill: var(--sprite-fill-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-text-color);
+    fill: var(--background-white);
+  }
+}
+
+.social__icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* -------------------FOOTER---------------------- */
+
+.social--footer {
+  margin-left: 70px;
+}
+
+.social__list {
+  display: flex;
+}
+
+.social__text {
+  margin-bottom: 20px;
+
+  color: var(--team-main);
+
+  @include font(14px, 1.14, 0.03em, 700);
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.social__frame {
+  height: 44px;
+  width: 44px;
+  margin-right: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--background-soc-color);
+  background-size: 20px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    background-color: var(--accent-text-color);
+  }
+}
+
+.social__link--footer {
+  width: 44px;
+  height: 44px;
+  @include align-center();
+  flex-direction: row;
+  border-radius: 50px;
+  fill: var(--white-text-color);
+
+  &:focus {
+    background-color: var(--hero-hover-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

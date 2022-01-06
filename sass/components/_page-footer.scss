@@ -7,12 +7,12 @@
   line-height: 1.71;
 }
 
-.footer-container {
+.footer--container {
   display: flex;
   align-items: baseline;
 }
 
-.footer-adress {
+.footer__contacts {
   .logo {
     display: flex;
     margin-bottom: 20px;
@@ -20,7 +20,7 @@
   }
 }
 
-.address1 {
+.footer__address--street {
   color: var(--team-main);
 
   @include font(14px, 1.71, 0.03em, 400);
@@ -35,7 +35,8 @@
   }
 }
 
-.address2 {
+.footer__address--mail,
+.footer__address--phone {
   color: var(--footer-text-color);
   font-style: normal;
 
@@ -47,11 +48,7 @@
   }
 }
 
-.contact-list {
-  display: block;
-}
-
-.address-item {
+.footer__address {
   margin-bottom: 9px;
 
   &:last-child {
@@ -59,125 +56,8 @@
   }
 }
 
-.footer-social {
-  margin-left: 70px;
-}
-
-.social-text {
-  margin-bottom: 20px;
-
-  color: var(--team-main);
-
-  @include font(14px, 1.14, 0.03em, 700);
-  font-style: normal;
-  text-transform: uppercase;
-}
-
-.social-list {
-  display: flex;
-}
-
-.socialnetworks {
-  height: 44px;
-  width: 44px;
-  margin-right: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-  background-color: var(--background-soc-color);
-  background-size: 20px;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:focus,
-  &:hover {
-    background-color: var(--accent-text-color);
-  }
-}
-
-.footer-socialnetworks {
-  width: 44px;
-  height: 44px;
-  @include align-center();
-  flex-direction: row;
-  border-radius: 50px;
-  fill: var(--white-text-color);
-
-  &:focus {
-    background-color: var(--hero-hover-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
-
-.subscribe {
-  display: inline-flex;
-  margin-bottom: 21px;
-
-  color: var(--white-text-color);
-
-  @include font(14px, 1.14, 0.03em, 700);
-  text-transform: uppercase;
-}
-
-.container-subscribe {
+.footer__subscribe {
   display: block;
   margin-left: 67px;
   justify-content: center;
-}
-
-.button-subscribe {
-  display: flex;
-  align-items: center;
-
-  @include font(16px, 1.87, 0.06em, 700);
-  color: var(--background-white);
-
-  width: 200px;
-  height: 50px;
-  text-align: left;
-  padding-left: 29px;
-  background-color: var(--accent-text-color);
-  border-radius: 4px;
-  border: transparent;
-  cursor: pointer;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    color: var(--hero-hover-color);
-    background-color: var(--white-text-color);
-  }
-}
-
-.icon-send {
-  margin-left: 10px;
-  width: 24px;
-  height: 24px;
-
-  fill: currentColor;
-
-  &:hover,
-  &:focus {
-    fill: var(--portfolio-overlay-color);
-  }
-}
-
-.auth-nav {
-  @include align-center();
-}
-
-.input {
-  padding-left: 16px;
-  width: 358px;
-  height: 50px;
-  margin-right: 12px;
-  border-radius: 4px;
-
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: var(--footer-color);
-  color: rgba(255, 255, 255, 0.6);
 }

@@ -1,4 +1,4 @@
-.title {
+.features__title {
   margin-bottom: 10px;
 
   @include font(14px, 1.71, 0.03em, 700);
@@ -7,7 +7,7 @@
   color: var(--primary-text-color);
 }
 
-.features {
+.features__list {
   display: flex;
   color: var(--gray-text-color);
   width: 270px;
@@ -18,7 +18,7 @@
   line-height: 1.71;
 }
 
-.item-features {
+.features__item {
   width: 270px;
 
   &::before {
