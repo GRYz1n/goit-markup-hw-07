@@ -1,4 +1,4 @@
-.form-checkbox {
+.checkbox__form {
   @include align-center();
 
   margin-bottom: 20px;
@@ -27,11 +27,11 @@
   }
 }
 
-.icon-check {
+.icon--check {
   fill: var(--background-white);
 }
 
-.agreement-link {
+.agreement {
   color: var(--accent-text-color);
   text-decoration: underline;
 }

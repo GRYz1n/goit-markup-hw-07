@@ -37,13 +37,13 @@
     0px 1px 5px rgba(0, 0, 0, 0.12);
 }
 
-.modal-check {
-  &:focus + .form-checkbox span,
-  &:hover + .form-checkbox span {
+.modal--check {
+  &:focus + .checkbox__form span,
+  &:hover + .checkbox__form span {
     border-color: var(--accent-text-color);
   }
 
-  &:checked + .form-checkbox span {
+  &:checked + .checkbox__form span {
     background-color: var(--accent-text-color);
     border: none;
   }

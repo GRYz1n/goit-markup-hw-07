@@ -5,12 +5,12 @@
 }
 
 .container {
-  &.h {
+  &.hero__container {
     width: 696px;
   }
 }
 
-.hero-title {
+.hero__title {
   margin-bottom: 30px;
   color: var(--white-text-color);
 

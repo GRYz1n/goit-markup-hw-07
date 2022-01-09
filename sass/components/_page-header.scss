@@ -18,7 +18,7 @@
   color: var(--primary-text-color);
 }
 
-.studio-bottom {
+.studio--bottom {
   color: var(--white-text-color);
 }
 
@@ -123,14 +123,14 @@
 //   }
 // }
 
-.icon-mail {
+.email-and-phone--icon-mail {
   width: 16px;
   height: 12px;
   margin-right: 10px;
   fill: currentColor;
 }
 
-.icon-phone {
+.email-and-phone--icon-phone {
   width: 10px;
   height: 16px;
   margin-right: 10px;
