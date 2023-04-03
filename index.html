@@ -27,6 +27,11 @@
                     <li class="header__list"><a href="#contacts" class="header__link">Contacts</a></li>
                 </ul>
             </nav>
+            <button type="button" class="mobile-menu-open" data-menu-open>
+                <svg class="mobile-menu-open__icon" width="32" height="22">
+                    <use href="./images/svg/modal/defs.svg#icon-menu"></use>
+                </svg>
+            </button>
             <address class="address">
                 <ul class="address__list">
                     <li class="address__item">
@@ -38,13 +43,68 @@
                 </ul>
             </address>
         </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <button class="mobile-menu__close-btn" data-menu-close>
+                    <svg class="mobile-menu__close-icon" width="24" height="24">
+                        <use href="./images/svg/hero/defs.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+                <ul class="header__nav">
+                    <li class="header__list"><a href="./index.html" class="header__link current">Studio</a></li>
+                    <li class="header__list"><a href="./portfolio.html" class="header__link">Portfolio</a></li>
+                    <li class="header__list"><a href="#contacts" class="header__link">Contacts</a></li>
+                </ul>
+
+                <ul class="address__list">
+                    <li class="address__item">
+                        <a href="mailto:info@devstudio.com" class="address__link email">info@devstudio.com</a>
+                    </li>
+                    <li class="address__item">
+                        <a href="tel:+110001111111" class="address__link phone">+11 (000) 111-11-11</a>
+                    </li>
+                </ul>
+
+                <ul class="header__sn-list list">
+                    <li class="header__sn-element">
+                        <a href="" class="link-socialnetworks">
+                            <svg class="icon-socialnetworks">
+                                <use href="./images/svg/social_media/defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header__sn-element">
+                        <a href="" class="link-socialnetworks">
+                            <svg class="icon-socialnetworks">
+                                <use href="./images/svg/social_media/defs.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header__sn-element">
+                        <a href="" class="link-socialnetworks">
+                            <svg class="icon-socialnetworks">
+                                <use href="./images/svg/social_media/defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header__sn-element">
+                        <a href="" class="link-socialnetworks">
+                            <svg class="icon-socialnetworks">
+                                <use href="./images/svg/social_media/defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
     </header>
     <!-- /Header top -->
 
     <main>
 
         <!-- Hero -->
-        <section class="hero section overlay">
+        <!-- <section class="hero section overlay">
             <div class="container container--hero">
                 <h1 class="hero__title">Effective Solutions for Your Business</h1>
                 <button type="button" class="btn" data-modal-open>Order Service</button>
@@ -113,11 +173,11 @@
                 </div>
             </div>
             <script src="./js/modal.js"></script>
-        </section>
+        </section> -->
         <!-- /Hero -->
 
         <!-- Our features -->
-        <section class="features section">
+        <!-- <section class="features section">
             <div class="container">
                 <h2 class="visually-hidden">About us</h2>
                 <ul class="features__list">
@@ -147,11 +207,11 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- /About section -->
 
         <!-- Our work -->
-        <section class="work section">
+        <!-- <section class="work section">
             <div class="container">
                 <h2 class="work__title">What are we doing</h2>
                 <ul class="work__list">
@@ -166,11 +226,11 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- /Our work -->
 
         <!-- Our team -->
-        <section class="team section">
+        <!-- <section class="team section">
             <div class="container">
                 <h2 class="team__title">Our Team</h2>
                 <ul class="team__list">
@@ -324,13 +384,13 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- /Our team -->
 
 
         <!-- Customers -->
 
-        <section class="customers section">
+        <!-- <section class="customers section">
             <div class="container">
                 <h2 class="customers__title">Customers</h2>
                 <ul class="customers__list">
@@ -378,13 +438,13 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- /Customers -->
 
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container footer__container">
             <div class="footer__contacts">
                 <a href="./index.html" class="logo footer__logo"> <span class="web">Web</span>Studio</a>
@@ -442,7 +502,7 @@
             </div>
 
         </div>
-    </footer>
+    </footer> -->
     <!-- /Footer -->
 
     <script>
@@ -452,6 +512,9 @@
 
         document.body.style.paddingTop = '${pageHeaderHeight}px';
     </script>
+
+    <script src="./js/mobile-menu.js"></script>
+
 
 </body>
 
