@@ -1,0 +1,240 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1160px;
+    /* background-color: rgb(138, 138, 181);  */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-section {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .block-inline {
+    display: inline-block;
+  }
+  .header-info {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+/*hero image*/
+
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/desktop-hero-img-1x.jpg);
+    height: 600px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/desktop-hero-img-2x.jpg);
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-image {
+    font-size: 56px;
+    line-height: 1.1;
+    width: 520px;
+    padding: 188px 0 48px 0;
+  }
+}
+
+/* hero-advantages */
+
+@media screen and (min-width: 1200px) {
+  .hero-advantages-icon {
+    display: flex;
+  }
+
+  .hero-advantages-direction {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+
+  .hero-advantages-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  .hero-advantages-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    background-color: var(--color-footer-social-ikons);
+    padding: 24px 0;
+    color: var(--accent-color-logo-dark);
+  }
+
+  .hero-advantages-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .li-inline-block {
+    width: 264px;
+  }
+
+  /*.li-block-dist{
+        margin-left: 24px;
+    }  
+    
+    .li-block-dist:first-child{
+        margin-left: 0;
+    }  */
+
+  .advantages-block {
+    display: flex;
+    width: 1128px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+/* wedoing-direction */
+
+@media screen and (min-width: 1200px) {
+  .wedoing-direction-section {
+    padding-bottom: 120px;
+    display: flex;
+  }
+
+  .wedoing-direction-text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--accent-color-logo-dark);
+    text-align: center;
+    margin-bottom: 72px;
+  }
+
+  .block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* ourteam-section */
+
+@media screen and (min-width: 1200px) {
+  .ourteam-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .ourteam-social-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 8px;
+  }
+}
+
+/*---- customers ----*/
+
+@media screen and (min-width: 1200px) {
+  .customers-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .customers-list {
+    gap: 24px;
+  }
+
+  .customers-link {
+    width: 168px;
+    height: 88px;
+  }
+
+  .customers-icon {
+    width: 104px;
+    height: 56px;
+  }
+}
+
+/*----- footer -----*/
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    background: var(--accent-color-logo-dark);
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer-block {
+    width: 264px;
+    margin-bottom: 0;
+  }
+
+  .footer-block-block {
+    margin-left: 22px;
+  }
+
+  .footer-block-social {
+    margin-left: 80px;
+    margin-bottom: 0;
+  }
+
+  .footer-subscribe {
+    margin-left: 52px;
+    margin-bottom: 0px;
+  }
+}
+
+/*------ portfolio -----*/
+
+@media screen and (min-width: 1200px) {
+  .prtf-filtr {
+    justify-content: center;
+    display: flex;
+    gap: 24px;
+    margin-bottom: 72px;
+  }
+
+  .prtf-button-grunt {
+    padding: 12px 24px;
+  }
+
+  .backdown-to-prtf {
+    padding-top: 96px;
+    padding-bottom: 72px;
+  }
+}
+
+/* CARDS */
+
+@media screen and (min-width: 1200px) {
+}
+
+/* modal */
+
+@media screen and (min-width: 1200px) {
+  .modal-modal {
+    width: 408px;
+    height: 584px;
+  }
+}

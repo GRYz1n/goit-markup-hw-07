@@ -1,0 +1,254 @@
+@media screen and (min-width: 767px) {
+  .container {
+    max-width: 768px;
+  }
+  .block {
+    display: inline-block;
+  }
+  .header-item {
+    margin-left: 40px;
+  }
+  .header-info {
+    font-size: 12px;
+    line-height: 1.33;
+  }
+  .header-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-logo {
+    margin-right: 80px;
+  }
+}
+
+/*hero image*/
+
+@media screen and (min-width: 767px) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet-hero-img-1x.jpg);
+    height: 436px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 767px),
+  screen and (min-resolution: 192dpi) and (min-width: 767px),
+  screen and (min-resolution: 2dppx) and (min-width: 767px) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet-hero-img-2x.jpg);
+    height: 436px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .hero-image {
+    font-size: 56px;
+    line-height: 1.1;
+    width: 520px;
+    padding: 112px 0 40px 0;
+  }
+}
+
+/* hero-advantages */
+
+@media screen and (min-width: 767px) {
+  .hero-advantages-icon {
+    display: none;
+  }
+
+  .hero-advantages-direction {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+  }
+
+  .hero-advantages-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .hero-advantages-section {
+    padding-top: 96px;
+    padding-bottom: 24px;
+  }
+
+  .li-inline-block {
+    width: 356px;
+    height: 120px;
+    display: inline-block;
+    margin-bottom: 72px;
+  }
+
+  .advantages-block {
+    display: flex;
+    width: 736px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* .li-block-dist:first-child{
+        margin-left: 0;
+    } */
+}
+
+/* wedoing-direction */
+
+@media screen and (min-width: 768px) {
+  .wedoing-direction-section {
+    display: none;
+  }
+}
+
+/* ourteam-section */
+
+@media screen and (min-width: 767px) {
+  .ourteam-section {
+    padding-top: 96px;
+    padding-bottom: 104px;
+  }
+
+  .ourteam-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+    justify-content: center;
+  }
+
+  .ourteam-social-list {
+    margin-left: 14px;
+    margin-right: 14px;
+  }
+
+  .ourteam-social-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+  }
+}
+
+/*---- customers ----*/
+
+@media screen and (min-width: 767px) {
+  .customers-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .customers-list {
+    gap: 72px 24px;
+  }
+
+  .customers-link {
+    width: 168px;
+    height: 88px;
+  }
+
+  .customers-icon {
+    width: 104px;
+    height: 56px;
+  }
+}
+
+/*----- footer -----*/
+
+@media screen and (min-width: 767px) {
+  .footer {
+    background: var(--accent-color-logo-dark);
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .footer-block-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-left: 78px;
+  }
+
+  .footer-block {
+    width: 264px;
+    margin-bottom: 72px;
+  }
+
+  .footer-block-social {
+    width: 208px;
+  }
+
+  .footer-subscribe-grop {
+    position: relative;
+  }
+
+  .footer-subscribe-btn {
+    position: absolute;
+    top: -40px;
+    right: -175px;
+  }
+
+  .footer-form-text {
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  .footer-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .footer-modal-form-input {
+    width: 264px;
+    margin-bottom: 0;
+  }
+}
+
+/*------ portfolio -----*/
+
+@media screen and (min-width: 767px) {
+  .prtf-filtr {
+    justify-content: center;
+    display: flex;
+    gap: 24px;
+    margin-bottom: 64px;
+  }
+
+  .prtf-button-grunt {
+    padding: 12px 24px;
+  }
+
+  .backdown-to-prtf {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+/* CARDS */
+
+@media screen and (min-width: 767px) {
+}
+
+/* modal */
+
+@media screen and (min-width: 767px) {
+  .modal-modal {
+    width: 408px;
+    height: 586px;
+  }
+}
+
+.mobile-menu {
+  display: none;
+}
