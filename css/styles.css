@@ -206,12 +206,9 @@ li {
 .hero-section {
   margin-left: auto;
   margin-right: auto;
-  /* background-color: var(--accent-color-logo-dark); */
-  /* padding-bottom: 192px;
-    padding-top: 192px; */
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .hero-image {

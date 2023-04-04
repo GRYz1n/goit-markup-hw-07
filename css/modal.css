@@ -12,7 +12,6 @@
   }
 
   .modal-menu-button {
-    background-color: transparent;
     border: none;
     line-height: 0;
   }
@@ -26,10 +25,11 @@
 button {
   padding: 0;
   border-width: 0;
+  background-color: transparent;
 }
 
 .modal-burger-color {
-  background-color: #fff;
+  background-color: var(--main-title-color);
   width: 40px;
   height: 32px;
 }
@@ -97,12 +97,14 @@ button {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
+    margin-bottom: 8px;
   }
 
   .hero-advantages-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
   }
 
   .hero-advantages-section {
