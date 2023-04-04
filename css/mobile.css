@@ -126,6 +126,10 @@
     text-transform: capitalize;
     color: #434455;
   }
+
+  .footer-modal-form-input {
+    width: 100%;
+  }
 }
 
 /*------ portfolio -----*/
