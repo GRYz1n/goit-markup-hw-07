@@ -232,7 +232,6 @@ button {
   }
 
   .footer-modal-form-input {
-    /* display: block; */
     color: #ffffff;
     background-color: inherit;
     width: 100%;
@@ -287,42 +286,5 @@ button {
 
   .footer-modal-form-submit-icon {
     fill: #ffffff;
-  }
-}
-
-/*------ portfolio -----*/
-
-@media screen and (max-width: 767px) {
-  .prtf-filtr {
-    justify-content: space-between;
-    display: flex;
-    row-gap: 16px;
-    flex-wrap: wrap;
-    width: 263px;
-    height: 96px;
-    margin-bottom: 48px;
-  }
-
-  .prtf-button-grunt {
-    padding: 8px 16px;
-  }
-
-  .backdown-to-prtf {
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
-}
-
-/* фото наших робіт CARDS */
-
-@media screen and (max-width: 767px) {
-}
-
-/* modal wind */
-
-@media screen and (max-width: 767px) {
-  .modal-modal {
-    width: 392px;
-    height: 586px;
   }
 }

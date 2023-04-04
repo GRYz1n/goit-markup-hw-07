@@ -1,7 +1,6 @@
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1160px;
-    /* background-color: rgb(138, 138, 181);  */
   }
 }
 
@@ -19,7 +18,7 @@
   }
 }
 
-/*hero image*/
+/* hero */
 
 @media screen and (min-width: 1200px) {
   .hero-section {
@@ -67,9 +66,11 @@
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
   }
 
   .hero-advantages-text {
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -82,7 +83,7 @@
     align-items: center;
     margin-bottom: 8px;
     border-radius: 4px;
-    background-color: var(--color-footer-social-ikons);
+    background-color: var(--ourteam-foto);
     padding: 24px 0;
     color: var(--accent-color-logo-dark);
   }
@@ -96,14 +97,6 @@
     width: 264px;
   }
 
-  /*.li-block-dist{
-        margin-left: 24px;
-    }  
-    
-    .li-block-dist:first-child{
-        margin-left: 0;
-    }  */
-
   .advantages-block {
     display: flex;
     width: 1128px;
@@ -112,7 +105,7 @@
   }
 }
 
-/* wedoing-direction */
+/* wedoing */
 
 @media screen and (min-width: 1200px) {
   .wedoing-direction-section {
@@ -191,7 +184,7 @@
   }
 
   .footer-block-block {
-    margin-left: 22px;
+    margin-left: auto;
   }
 
   .footer-block-social {
@@ -199,8 +192,8 @@
     margin-bottom: 0;
   }
 
-  .footer-subscribe {
-    margin-left: 52px;
+  .footer-form-container {
+    margin-left: auto;
     margin-bottom: 0px;
   }
 }
@@ -215,7 +208,7 @@
     margin-bottom: 72px;
   }
 
-  .prtf-button-grunt {
+  .prtf-button {
     padding: 12px 24px;
   }
 

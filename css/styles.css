@@ -10,11 +10,10 @@
   --color-logo-button: #4d5ae5;
   --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  --color-tmp-brdr: #transparent;
   --color-customers-iсons: #8e8f99;
   --color-footer-social-iсons: #f4f4fd;
-  --color-footer-social-iсons-grunt-a: rgba(255, 255, 255, 0.1);
-  --color-footer-social-iсons-grunt: #31d0aa;
+  --color-footer-social-iсons-green: #31d0aa;
+  --color-footer-social-iсons-dark: rgba(255, 255, 255, 0.1);
   --timing: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -234,7 +233,6 @@ li {
   margin: 0 auto;
   cursor: pointer;
   border-radius: 4px;
-  border: 1px solid var(--color-tmp-brdr);
 }
 
 .hero-button {
@@ -297,6 +295,7 @@ li {
 
 .ourteam-name {
   font-weight: 500;
+  margin-bottom: 8px;
   font-size: 20px;
   line-height: 1.2;
   color: var(--accent-color-logo-dark);
@@ -309,13 +308,6 @@ li {
   color: var(--advantages-ourteam-text);
   text-align: center;
 }
-
-/* .ourteam-social-list{
-    display: flex;
-    gap: 24px;
-    justify-content: center;
-    margin-top: 8px;
-} */
 
 .ourteam-social-item {
   width: 40px;
@@ -386,25 +378,9 @@ li {
 
 /* -------------------FOOTER---------------------- */
 
-/* .footer {
-  background: var(--accent-color-logo-dark);
-  padding-top: 100px;
-  padding-bottom: 100px;
-} */
-
-/* .backdown-to-footer-prtf{
-    padding-top: 96px;
-    padding-bottom: 120px;
-} */
-
-/* .footer-block-block{
-    display: flex;
-} */
-
-/* .footer-block{
-    width: 264px;
-    display: inline-block;
-}   */
+.footer-logo {
+  margin-bottom: 16px;
+}
 
 .footer-logo-color {
   color: var(--accent-color-logo);
@@ -416,17 +392,13 @@ li {
   text-decoration: none;
 }
 
-.footer-text-color {
+.footer-text {
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
+
   color: var(--footer-text-color);
 }
-
-/* .footer-block-social{
-    display: inline-block;
-    margin-left: 120px;
-    margin-right: 80px;
-} */
 
 .footer-block-social-title {
   font-weight: 500;
@@ -456,15 +428,14 @@ li {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: var(--color-footer-social-iсons-grunt-a);
+  background-color: var(--color-footer-social-iсons-dark);
   color: var(--color-footer-social-iсons);
   transition: background-color var(--timing), color var(--timing);
 }
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-  background-color: var(--color-footer-social-iсons-grunt);
-  color: var(--accent-color-logo-dark);
+  background-color: var(--color-footer-social-iсons-green);
 }
 
 .footer-social-icon {
@@ -474,9 +445,6 @@ li {
 }
 
 .footer-modal-form-input {
-  /* width: 264px;
-    margin-bottom: 0; */
-
   color: #ffffff;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -527,7 +495,7 @@ li {
 
 /* -------------------PORTFOLIO---------------------- */
 
-.prtf-button-grunt {
+.prtf-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -540,8 +508,8 @@ li {
   transition: var(--timing);
 }
 
-.prtf-button-grunt:hover,
-.prtf-button-grunt:focus {
+.prtf-btn:hover,
+.prtf-btn:focus {
   background-color: var(--color-button-link);
   color: var(--ourteam-foto);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
@@ -561,6 +529,7 @@ li {
 .card {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   display: block;
+  transition: box-shadow var(--timing);
 }
 
 .card:hover,
@@ -591,7 +560,7 @@ li {
   padding-bottom: 164px;
   overflow: auto;
   transform: translate(0, 100%);
-  transition: transform 500ms linear;
+  transition: transform 250ms linear;
 }
 
 .card-list-item:hover .card-overlay {
@@ -609,6 +578,7 @@ li {
 }
 
 .cards-name {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -667,7 +637,6 @@ li {
 
 .modal-close-btn-icon {
   background: #e7e9fc;
-  /* outline: none; */
   transition: var(--timing);
 }
 
@@ -701,9 +670,6 @@ li {
   text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  /* margin-block-start: 0;
-    margin-block-end: 0;
-    width: 360px; */
   height: 24px;
   margin-bottom: 16px;
 }
@@ -727,10 +693,6 @@ li {
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
-
-/* .modal-form-control{
-    position: relative;
-} */
 
 .modal-contact-form-input {
   width: 100%;
@@ -858,7 +820,6 @@ li {
   margin: 0 auto;
   cursor: pointer;
   border-radius: 4px;
-  border: 1px solid var(--color-tmp-brdr);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
