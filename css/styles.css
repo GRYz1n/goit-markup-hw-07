@@ -245,6 +245,36 @@ li {
   background-color: var(--color-button-link);
 }
 
+/* -------------------BUTTON---------------------- */
+
+.modal-image-btn {
+  padding: 16px 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  color: var(--main-title-color);
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.modal-text-btn {
+  min-width: 105px;
+}
+
+.modal-button {
+  background-color: var(--color-logo-button);
+  transition: var(--timing);
+}
+
+.modal-button:hover,
+.modal-button:focus {
+  background-color: var(--color-button-link);
+}
+
 /* -------------------FEATURES SECTION---------------------- */
 
 .hero-advantages-section {
@@ -376,123 +406,6 @@ li {
   fill: currentColor;
 }
 
-/* -------------------FOOTER---------------------- */
-
-.footer-logo {
-  margin-bottom: 16px;
-}
-
-.footer-logo-color {
-  color: var(--accent-color-logo);
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.5;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.footer-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-
-  color: var(--footer-text-color);
-}
-
-.footer-block-social-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--main-title-color);
-  margin-bottom: 16px;
-}
-
-.footer-social-list {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-social-item {
-  width: 40px;
-  height: 40px;
-}
-
-.footer-social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: var(--color-footer-social-iсons-dark);
-  color: var(--color-footer-social-iсons);
-  transition: background-color var(--timing), color var(--timing);
-}
-
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: var(--color-footer-social-iсons-green);
-}
-
-.footer-social-icon {
-  fill: currentColor;
-  width: 24px;
-  height: 24px;
-}
-
-.footer-modal-form-input {
-  color: #ffffff;
-  background-color: inherit;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  padding: 9px 16px;
-  transition: border-color var(--timing);
-}
-
-.footer-modal-form-submit {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 169px;
-  align-self: center;
-  padding: 8px 24px;
-  background-color: #4d5ae5;
-  border: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  transition: background-color var(--timing);
-}
-
-.footer-modal-form-submit-text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.15;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  margin-right: 16px;
-}
-
-.footer-modal-form-submit-icon {
-  fill: #ffffff;
-}
-
-/* ----- subscribe -----*/
-
-.footer-modal-form-submit {
-  transition: background-color var(--timing);
-}
-
-.footer-modal-form-submit:hover,
-.footer-modal-form-submit:focus {
-  background-color: var(--color-button-link);
-  cursor: pointer;
-}
-
 /* -------------------PORTFOLIO---------------------- */
 
 .prtf-btn {
@@ -591,6 +504,131 @@ li {
   letter-spacing: 0.02em;
   line-height: 1.5;
   color: var(--advantages-ourteam-text);
+}
+
+/* -------------------FOOTER---------------------- */
+
+.footer-logo {
+  margin-bottom: 16px;
+}
+
+.footer-logo-color {
+  color: var(--accent-color-logo);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--footer-text-color);
+}
+
+.footer-block-social-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-title-color);
+  margin-bottom: 16px;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--color-footer-social-iсons-dark);
+  color: var(--color-footer-social-iсons);
+  transition: background-color var(--timing), color var(--timing);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--color-footer-social-iсons-green);
+}
+
+.footer-social-icon {
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+}
+
+.footer-modal-form-input {
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px 8px 16px;
+
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  transition: border-color var(--timing);
+}
+
+.footer-modal-form-submit {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 169px;
+  align-self: center;
+  padding: 8px 24px;
+  background-color: #4d5ae5;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color var(--timing);
+}
+
+.footer-modal-form-submit-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin-right: 16px;
+}
+
+.footer-modal-form-submit-icon {
+  fill: #ffffff;
+}
+
+/* ----- subscribe -----*/
+
+.footer-modal-form-submit {
+  transition: background-color var(--timing);
+}
+
+.footer-modal-form-submit:hover,
+.footer-modal-form-submit:focus {
+  background-color: var(--color-button-link);
+  cursor: pointer;
 }
 
 /*----- MODAL -----*/
@@ -805,34 +843,4 @@ li {
 .modal-form-check-privacy:hover,
 .modal-form-check-privacy:focus {
   color: rgba(64, 75, 191, 1);
-}
-
-/* -------------------BUTTON---------------------- */
-
-.modal-image-btn {
-  padding: 16px 32px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  display: flex;
-  align-items: center;
-  color: var(--main-title-color);
-  margin: 0 auto;
-  cursor: pointer;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.modal-text-btn {
-  min-width: 105px;
-}
-
-.modal-button {
-  background-color: var(--color-logo-button);
-  transition: var(--timing);
-}
-
-.modal-button:hover,
-.modal-button:focus {
-  background-color: var(--color-button-link);
 }
