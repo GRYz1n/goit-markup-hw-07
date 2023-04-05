@@ -23,12 +23,14 @@
 @media screen and (min-width: 1200px) {
   .hero-section {
     max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/desktop-hero-img-1x.jpg);
-    height: 600px;
+    /* height: 600px; */
   }
 }
 
@@ -41,7 +43,7 @@
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/desktop-hero-img-2x.jpg);
-    height: 600px;
+    /* height: 600px; */
   }
 }
 
@@ -94,6 +96,7 @@
 
   .li-inline-block {
     width: 264px;
+    margin-bottom: 0;
   }
 
   .advantages-block {
@@ -183,11 +186,12 @@
   }
 
   .footer-block-block {
-    margin-left: auto;
+    width: 100%;
+    gap: 0;
   }
 
   .footer-block-social {
-    margin-left: 80px;
+    margin-left: 120px;
     margin-bottom: 0;
   }
 
