@@ -204,8 +204,8 @@ li {
 /* -------------------HERO---------------------- */
 
 .hero-section {
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 112px;
+  padding-bottom: 112px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -215,7 +215,8 @@ li {
   font-weight: 700;
   color: var(--main-title-color);
   text-align: center;
-  margin: 0 auto;
+  margin: auto;
+  margin-bottom: 72px;
   letter-spacing: 0.02em;
 }
 
@@ -227,7 +228,7 @@ li {
   display: flex;
   align-items: center;
   color: var(--main-title-color);
-  margin: 0 auto;
+  margin: auto;
   cursor: pointer;
   border-radius: 4px;
 }
@@ -711,7 +712,6 @@ li {
 
 .modal-contact-form {
   width: 360px;
-  min-height: 300px;
   margin: 0 auto;
   margin-bottom: 8px;
   /* border: none; */
