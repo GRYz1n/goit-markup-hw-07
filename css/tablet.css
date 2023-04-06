@@ -1,6 +1,7 @@
 @media screen and (min-width: 767px) {
   .container {
     max-width: 768px;
+    flex-direction: column;
   }
   .block {
     display: inline-block;
@@ -8,16 +9,23 @@
   .header-item {
     margin-left: 40px;
   }
-  .header-item:first-child {
+  /* .header-item:first-child {
     margin-left: 0;
-  }
+  } */
   .header-info {
     font-size: 12px;
     line-height: 1.33;
+    margin-bottom: 4px;
+  }
+  .link-phone {
+    margin-left: 0;
+    margin-bottom: 0px;
   }
   .header-flex {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
   .header-logo {
     margin-right: 80px;
@@ -58,6 +66,7 @@
     font-size: 56px;
     line-height: 1.1;
     width: 520px;
+    margin-bottom: 40px;
     /* padding: 112px 0 40px 0; */
   }
 }
