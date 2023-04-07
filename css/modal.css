@@ -199,8 +199,8 @@ button {
 @media screen and (max-width: 767px) {
   .footer {
     background: var(--accent-color-logo-dark);
-    /* padding-top: 96px;
-    padding-bottom: 96px; */
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 
   .footer-block-block {
