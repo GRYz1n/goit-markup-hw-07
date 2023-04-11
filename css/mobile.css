@@ -4,6 +4,11 @@
     flex-direction: column;
   }
 
+  .hero-section {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
   .mobile-menu {
     display: flex;
     width: 100%;

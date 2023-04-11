@@ -22,6 +22,8 @@
 
 @media screen and (min-width: 1200px) {
   .hero-section {
+    padding-top: 188px;
+    padding-bottom: 188px;
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
@@ -135,10 +137,10 @@
 /* ourteam-section */
 
 @media screen and (min-width: 1200px) {
-  .ourteam-section {
+  /* .ourteam-section {
     padding-top: 188px;
     padding-bottom: 188px;
-  }
+  } */
 
   .ourteam-social-list {
     display: flex;

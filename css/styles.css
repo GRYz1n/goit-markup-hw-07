@@ -212,8 +212,8 @@ li {
 /* -------------------HERO---------------------- */
 
 .hero-section {
-  padding-top: 112px;
-  padding-bottom: 112px;
+  /* padding-top: 112px;
+  padding-bottom: 112px; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -367,7 +367,19 @@ li {
   background-color: var(--color-button-link);
 }
 
+.social-icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
 .ourteam-social-icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.social-icon-twitter {
   width: 24px;
   height: 24px;
   fill: currentColor;
@@ -574,11 +586,11 @@ li {
   background-color: var(--color-footer-social-iсons-green);
 }
 
-.footer-social-icon {
+/* .footer-social-icon {
   fill: currentColor;
   width: 24px;
   height: 24px;
-}
+} */
 
 .footer-modal-form-input {
   width: 264px;
