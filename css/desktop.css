@@ -137,10 +137,10 @@
 /* ourteam-section */
 
 @media screen and (min-width: 1200px) {
-  /* .ourteam-section {
-    padding-top: 188px;
-    padding-bottom: 188px;
-  } */
+  .ourteam-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 
   .ourteam-social-list {
     display: flex;
