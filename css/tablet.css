@@ -187,6 +187,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0 24px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin-left: auto;
     margin-right: auto;
   }
