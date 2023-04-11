@@ -166,7 +166,7 @@
 
 @media screen and (max-width: 767px) {
   .modal-modal {
-    width: calc(100% - 2 * 15px);
+    width: 392px;
   }
 
   .modal-contact-form {
@@ -176,5 +176,11 @@
   .modal-grup {
     padding-right: 16px;
     padding-left: 16px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .modal-modal {
+    width: calc(100% - 2 * 15px);
   }
 }
